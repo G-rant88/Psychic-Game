@@ -42,7 +42,7 @@ else if (char !== cpu && player.indexOf(char) === -1 &&
 	
 	gl = gl-1
 	document.getElementById("left").textContent = " " + gl;
-	document.getElementById("sofar").textContent = " " + player + " ";
+	document.getElementById("sofar").textContent = " " + player.join(" ");
 
 }
 
