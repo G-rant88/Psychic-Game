@@ -25,7 +25,7 @@ document.onkeyup = function(event) {
 if (char === cpu) {
 	wins++
 	document.getElementById("wins").textContent = " " + wins;
-	cpufunc();
+	cpu = letter[Math.floor(Math.random() * 26)];
 	gl = 10;
 	player = [];
 
@@ -51,7 +51,7 @@ else if (char !== cpu && player.indexOf(char) === -1 &&
 if (gl === 0) {
 	losses++
 	document.getElementById("losses").textContent = " " + losses;
-	cpufunc();
+	cpu = letter[Math.floor(Math.random() * 26)];
 	gl = 10
 	player = [];
 
