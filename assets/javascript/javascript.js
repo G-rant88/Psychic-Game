@@ -10,6 +10,8 @@ var wins = 0;
 var losses = 0;
 var gl = 10;
 
+console.log(cpu);
+
 function cpufunc() {
 
 letter[Math.floor(Math.random() * 26)];
